@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="p.css" />
+  </head>
+  <body>
+    <!------------------------------------------Nav Bar--------------------------------------------------------->
+    <div class="navbar">
+      <div id="container">
+        <nav>
+          <ul id="menuItems">
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="#">Best Collections</a>
+              <!--  Drop Down -->
+              <ul>
+                <li><a href="#">Themes</a></li>
+                <li><a href="#">Plugins</a></li>
+                <li><a href="#">Tutorials</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Account</a></li>
+          </ul>
+        </nav>
+        <img src="images/menu.png" class="menu_icon" onclick="menueffect()" />
+      </div>
+    </div>
+
+    <!--------------------------------------Image at Top------------------------------------------------------->
+
+    <div class="container">
+      <div class="items container-item" id="item-1">
+        <div class="nested-item" id="w2">
+          <img src="images/h.jpg" width="100%" />
+        </div>
+        <div class="nested-item" id="w1">
+          <div class="categories">
+            <div class="small_cont">
+              <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell">
+                  <img src="images/flower.jpeg" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="images/flower.jpeg" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="images/flower.jpeg" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="images/flower.jpeg" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="images/flower.jpeg" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="images/flower.jpeg" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="images/flower.jpeg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!------------------------------------------Content at Top----------------------------------------------->
+      <div class="items" id="item-2">
+        <h1 class="title"><b>PHOTO GALLERY!</b></h1>
+        <br />
+        <br />
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eos,
+          quae sint corrupti consectetur eligendi quo, aut laborum fuga
+          provident neque deleniti dolores quaerat obcaecati dolor? Accusamus
+          sunt voluptatem doloremque. Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Suscipit architecto, unde amet odio eum molestias
+          optio sed deserunt quis sunt sit eligendi aliquam ad veniam. Quisquam
+          ad nisi reprehenderit veritatis! Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Totam veniam odio beatae ab vero quas
+          architecto laudantium eaque aliquid deserunt delectus quam neque
+          dolore deleniti, doloremque obcaecati!
+        </p>
+        <br />
+        <br />
+        <br />
+        <p>
+          Perspiciatis vero, labore temporibus consequuntur quod provident atque
+          modi, nemo sint fugiat ea odit deserunt iste? Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Similique ducimus odio repudiandae
+          sapiente perspiciatis! Illo perferendis, adipisci non doloremque modi
+          voluptatem, nihil rem consequuntur explicabo alias expedita doloribus
+          velit magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+
+        <a href="#" class="btn"><span>Add to Cart &#8594;</span></a>
+        <h1>
+          <i class="fa fa-quote-left"></i>
+          <em>
+            Photograph: a picture painted by the sun without instruction in art.
+          </em>
+        </h1>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------------------->
+    <section id="host" class="box5">
+      <div class="child">
+        <div class="text67">
+          <p>
+            <i class="fa fa-quote-left"></i>
+            <b>Photography</b>
+            <em>
+              is a way of feeling, of touching, of loving. What you have caught
+              on film is captured forever… It remembers little things, long
+              after you have forgotten everything.</em
+            >
+          </p>
+        </div>
+        <div class="button"><button class="click">Know more</button></div>
+      </div>
+    </section>
+    <!----------------------------------------Overlay Images----------------------------------------------------------------->
+    <div class="testimonial">
+      <h1 class="heading">You may also like!</h1>
+      <div class="small_cont">
+        <div class="row">
+          <div class="image" id="a1">
+            <img class="img" src="images/hawa1.jpeg" />
+            <div class="overlay">
+              <h3 class="image_title">Palace</h3>
+              <p class="discription">beautiful place</p>
+            </div>
+            <h2 class="title">
+              Rawla Mrignayani <br />
+              <em>$300</em>
+            </h2>
+          </div>
+
+          <div class="image" id="a2">
+            <img class="img" src="images/hawa1.jpeg" />
+            <div class="overlay">
+              <h3 class="image_title">Palace</h3>
+              <p class="discription">beautiful place</p>
+            </div>
+            <h2 class="title">Zostel Jaipur <br /><em>$400</em></h2>
+          </div>
+
+          <div class="image" id="a3">
+            <img class="img" src="images/hawa1.jpeg" />
+            <div class="overlay">
+              <h3 class="image_title">Palace</h3>
+              <p class="discription">beautiful place</p>
+            </div>
+            <h2 class="title">Samode Haveli<br /><em>$450</em></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------------------------------------------------Footer----------------------------------------------------->
+
+    <footer class="footer">
+      <a href="#">FAQ</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Refund Policy</a>
+      <a class="copyright" href="#">&copy; 2021 | Photo Gallery</a>
+    </footer>
+    <!------------------------------------------Java Script----------------------------------------------------------->
+    <script>
+      var height = document.getElementById("menuItems");
+      height.style.maxHeight = "0px";
+
+      function menueffect() {
+        if (height.style.maxHeight == "0px") {
+          height.style.maxHeight = "500px";
+        } else {
+          height.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html>

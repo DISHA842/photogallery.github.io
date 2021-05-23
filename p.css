@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+}
+body {
+  font-family: cursive;
+}
+
+/*-------------------------------Navbar Css---------------------------------*/
+
+#container {
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #000000;
+  margin-left: 4px;
+}
+
+nav ul {
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li {
+  display: inline-block;
+  color: white;
+}
+
+nav a {
+  display: block;
+  padding: 0px 10px;
+  color: black;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+/*-----------------------------------------Dropdown------------------------------------------------*/
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 60px;
+}
+
+nav ul li:hover > ul {
+  background-color: #fcb5ff;
+  color: white;
+  display: block;
+  padding-left: 0px;
+  border-radius: 10px;
+}
+
+nav ul ul li {
+  width: 184px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+li > a:after {
+  content: " +";
+}
+li > a:only-child:after {
+  content: "";
+}
+
+/*------------------------------------Top Image & Content----------------------------------*/
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-gap: 20px;
+  grid-auto-columns: minmax(100px, auto);
+  grid-auto-rows: minmax(100px, auto);
+  column-gap: 10px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  background: radial-gradient(white, #fbe3fc);
+}
+.items {
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+#item-1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.container-item {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  column-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-auto-columns: minmax(100px, auto);
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.nested-item {
+  border-radius: 3px;
+}
+#item-2 {
+  margin-top: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: left;
+  font-size: medium;
+  letter-spacing: 1px;
+  font-weight: 300;
+  overflow: hidden;
+}
+#w2 img {
+  border-radius: 5%;
+  margin-top: 200px;
+}
+#w1 {
+  margin-top: 40px;
+}
+
+.carousel-cell img {
+  padding: 20px;
+  border-radius: 40px;
+}
+.menu_icon {
+  width: 40px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: none;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: rgba(80, 8, 122, 0.904);
+  color: aliceblue;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  background: #110f0f;
+}
+/*-----------------------------------------------------------------------------*/
+#host {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(white, #fbe3fc);
+}
+.child {
+  width: 900px;
+  height: 400px;
+  background-color: burlywood;
+  background-image: linear-gradient(
+      295deg,
+      rgba(255, 255, 255, 0.9) 50%,
+      transparent 50%
+    ),
+    url(images/blur.jpg);
+  background-size: 100% 100%;
+  box-shadow: 0 10px 20px -6px #000;
+}
+
+.text67 p {
+  padding-left: 540px;
+  padding-top: 20px;
+  font-size: 28px;
+  color: black;
+}
+.button {
+  padding-left: 650px;
+  padding-top: 20px;
+}
+.click {
+  font-size: 20px;
+  color: #333;
+  background-color: aliceblue;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 10px 10px -6px #000;
+}
+
+.click:hover {
+  background-color: black;
+  color: white;
+}
+
+/*<!---------------------------------------------Overlay Css-------------------------------------------------------->*/
+
+.testimonial {
+  background: radial-gradient(white, #fbe3fc);
+  padding-top: 100px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: unset;
+}
+
+.heading {
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: black;
+}
+.heading::after {
+  content: "";
+  background: #ff523b;
+  width: 150px;
+  height: 5px;
+  position: absolute;
+  border-radius: 5px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 10%;
+}
+
+.image {
+  position: relative;
+  width: 26.8%;
+
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.img {
+  display: block;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 63%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.overlay:hover > * {
+  transform: translateY(0);
+}
+.overlay:hover {
+  opacity: 1;
+}
+
+.image_title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+
+.discription {
+  font-size: 1.25em;
+  margin-top: 0.05em;
+}
+/*--------------------------------------Footer Css------------------------------------------------------*/
+footer {
+  background-color: #333;
+  display: flex;
+  overflow: hidden;
+}
+
+footer a {
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  float: left;
+  color: white;
+}
+.copyright {
+  float: right;
+}
+
+/*===========================================Responsive=========================================================*/
+
+@media only screen and (max-width: 800px) {
+  body {
+    margin-top: 0;
+  }
+  #w2 img {
+    margin-top: 50px;
+  }
+
+  #w1 {
+    top: 20px;
+  }
+
+  .navbar {
+    background: radial-gradient(white, #fbe3fc);
+  }
+
+  nav ul {
+    position: absolute;
+    margin-top: 5.5px;
+    transition: max-height 0.5s;
+    left: 55px;
+    background: #333333;
+    width: 600px;
+    overflow: hidden;
+  }
+
+  nav ul li {
+    display: block;
+  }
+  nav ul li a {
+    color: #fff;
+  }
+  nav ul li:hover > ul {
+    width: 184px;
+  }
+
+  .menu_icon {
+    margin-top: 2px;
+    display: block;
+    cursor: pointer;
+  }
+  .row {
+    display: block;
+  }
+  .paragraph p {
+    text-align: left;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    overflow: hidden;
+  }
+
+  .child {
+    width: 420px;
+    height: 420px;
+  }
+
+  .text67 p {
+    padding-left: 300px;
+    padding: top 20px;
+    font-size: 16.5px;
+    color: black;
+  }
+
+  .button {
+    padding-left: 280px;
+    padding-top: 10px;
+  }
+  .image {
+    width: 400px;
+    margin-left: 50px;
+  }
+  .overlay {
+    height: 76%;
+  }
+  #w2 {
+    width: 500px;
+  }
+
+  #a3 h2 {
+    margin-bottom: 1px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+}
